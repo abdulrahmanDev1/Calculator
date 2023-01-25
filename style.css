@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+  
+  body {
+  overflow-y: hidden;
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 25px;
+    background-color: #212121;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .calculator {
+  margin-top:-20px ;
+    background: black;
+    border-radius: 50px;
+    color: white;
+    height: 990px;
+    padding: 20px;
+    position: relative;
+    width: 563px;
+  }
+  
+  .top-container {
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .prev-op{
+    color: #a5a5a58a;
+    font-size: 50px;
+    font-weight: 300;
+    height: 150px;
+    margin-right: 20px;
+    text-align: right;
+    overflow-x: hidden;
+  }
+  .value  {
+  border: #333 2px solid;
+  border-radius: 50px;
+  margin-left: 10px;
+    font-weight: 300;
+    height: 300px !important;
+    margin: auto;
+    margin-left: -8px;
+    padding: 10px;
+    text-align: right;
+    width: 540px;
+    padding-bottom: 10px;
+  }
+  .curr-op{
+  font-family: ;
+  font-size: 3.75rem;
+  text-size-adjust: auto;
+  height: 100px;
+  word-break:break-all;
+  word-wrap:break-word;
+  text-overflow:ellipsis;
+  margin-bottom: 10px;
+  padding-right: 5px;
+  }
+  
+  .buttons-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+     padding-top: 20px;
+  }
+  button{
+  color: white;
+  }
+  .button {
+    align-items: center;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 45px;
+    height: 110px;
+    justify-content: center;
+    transition: filter .3s;
+    width: 110px;
+  }
+  
+  .button.function {
+    color: black;
+    background: #a5a5a5;
+  }
+  
+  .button.operator {
+    background: #f1a33c;
+  }
+  
+  .button.number-0 {
+    border-radius: 55px;
+    grid-column: 1 / span 2;
+    justify-content: flex-start;
+    padding-left: 43px;
+    width: 250px;
+  }
+  
+  .button:active{
+      transform: scale(.87);
+
+  }
+  .button:hover{
+
+    filter: brightness(120%);
+  }
+  
+  
+ 
+  @media screen and (max-width: 1550px) {
+
+    
+    .container{
+    height: 93vh;
+    }
+  
+    .calculator {
+      transform: scale(.7);
+    }
+  
+    .button {
+      transform: scale(.9);
+    }
+  
+    .button.number-0 {
+      padding-left: 35px;
+      width: 245px;
+    }
+  }
+  
+.credits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  color: #a5a5a5;
+}
+.credits a{
+  color: #a5a5a5;
+  text-decoration: none;
+}
